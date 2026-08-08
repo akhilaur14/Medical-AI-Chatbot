@@ -34,7 +34,7 @@ uvicorn main:app --reload
 This chatbot provides only general information and is not a replacement for professional medical advice.
 
 # Author
-Athira U R
+Akhila U R
 
 
 
