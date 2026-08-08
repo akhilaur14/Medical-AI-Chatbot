@@ -1,0 +1,187 @@
+/* body{
+    font-family: Arial;
+    text-align: center;
+    margin-top: 50px;
+}
+input{
+    padding:10px;
+    margin:5px;
+}
+button{
+    padding:10px;
+    background:green;
+    color:white;
+    border:none;
+} */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    height: 100-vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Realistic blurred medical background */
+    background: url('/static/background_img.png') no-repeat center center fixed;
+    background-size: cover;
+    
+}
+
+.background-overlay {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2); /* Softens the background image */
+}
+
+.login-card {
+    background: white;
+    width: 100%;
+    max-width: 420px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Header & Logo */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #0b3d59;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cross-icon {
+    background: #4caf50;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.bot-welcome {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f8fafd;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.bot-img {
+    width: 50px;
+    height: 50px;
+    background: #e1f5fe;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.chat-bubble {
+    font-size: 13px;
+    color: #333;
+    line-height: 1.4;
+}
+
+.chat-bubble span {
+    color: #777;
+}
+
+/* Form Styling */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-wrapper .icon {
+    position: absolute;
+    left: 12px;
+    color: #888;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f3f4f6;
+    outline: none;
+    font-size: 14px;
+}
+
+.show-pass {
+    position: absolute;
+    right: 12px;
+    font-size: 12px;
+    color: #666;
+    cursor: pointer;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    background: #1a4f70;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.login-btn:hover {
+    background: #133a54;
+}
+
+.footer-links {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.forgot {
+    display: block;
+    color: #1a4f70;
+    text-decoration: none;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.signup {
+    color: #1a4f70;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+h1{
+    color: red;
+}

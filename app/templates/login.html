@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicare Chatbot Login</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="background-overlay">
+        <div class="login-card">
+            <div class="header">
+                <div class="logo">
+                   
+                    <span class="cross-icon">✚</span> 
+                    <span class="logo-text">MEDICARE <strong>CHATBOT</strong></span>
+                </div>
+                <div class="bot-welcome">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="Bot Icon" class="bot-img">
+                    <div class="chat-bubble">
+                        Hi! How can I help you today?<br>
+                        <span>Please login to start chatting.</span>
+                    </div>
+                </div>
+            </div>
+
+            <form method="post">
+                <div class="input-group">
+                    <label>USERNAME</label>
+                    <div class="input-wrapper">
+                        <span class="icon">👤</span>
+                        <input type="text" name="username" placeholder="Enter your username" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>PASSWORD</label>
+                    <div class="input-wrapper">
+                        <span class="icon">🔒</span>
+                        <input type="password" name="password"  placeholder="Enter your password" required>
+                        <span class="show-pass" onclick="togglePassword()">Show</span>
+                    </div>
+                </div>
+
+                <button type="submit" class="login-btn">LOG IN ➔</button>
+                
+                <div class="footer-links">
+                   
+                    <p>Don't have an account? <a href="/signup" class="signup">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+function togglePassword() {
+    const pass = document.querySelector("input[name='password']");
+    pass.type = pass.type === "password" ? "text" : "password";
+}
+</script>
+</body>
+
+
+</html>
